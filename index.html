@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/1200x/09/a7/c8/09a7c8b157d0986d3bd6e422ef20db01.jpg"
+      type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Mozilla+Text:wght@200..700&family=Nata+Sans:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+AU+QLD:wght@100..400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <style>
+    .font-jay {
+      font-family: "Nunito", sans-serif;
+    }
+    .text-oren {
+      color: orangered;
+    }
+  </style>
+  <body>
+    <nav
+      class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-300"
+      aria-label="Primary">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Untuk menu laptop -->
+        <div class="flex items-center justify-between h-16">
+          <a
+            href="#"
+            class="flex items-center text-white text-xl font-jay uppercase tracking-wider font-bold"
+            >jayla</a
+          >
+
+          <button
+            id="hamburger"
+            class="md:hidden p-2 rounded hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-orange-500"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu">
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left">
+              <a
+                href="#aboutMe"
+                class="px-3 py-2 text-slate-300 hover:text-orange-400 uppercase font-jay font-bold"
+                >About Me</a
+              >
+              <a
+                href="#whatIDo"
+                class="px-3 py-2 text-slate-300 hover:text-orange-400 uppercase font-jay font-bold"
+                >What i do</a
+              >
+              <a
+                href="#portofolio"
+                class="px-3 py-2 text-slate-300 hover:text-orange-400 uppercase font-jay font-bold"
+                >Portfolio</a
+              >
+              <a
+                href="#"
+                class="px-3 py-2 text-slate-300 hover:text-orange-400 uppercase font-jay font-bold"
+                >Skills</a
+              >
+              <a
+                href="#"
+                class="px-3 py-2 text-slate-300 hover:text-orange-400 uppercase font-jay font-bold"
+                >Blog</a
+              >
+              <a
+                href="#"
+                class="bg-orange-600 hover:bg-orange-300 rounded-xl px-4 py-2 font-jay font-bold text-slate-200 justify-center items-center"
+                >Contact Aq</a
+              >
+            </div>
+          </div>
+
+          <!-- Menu untuk Hp -->
+          <div
+            id="mobile-panel"
+            class="md:hidden hidden border-t border-slate-800 py-2">
+            <a
+              href="#"
+              class="block px-3 py-2 text-slate-300 hover:text-orange-300 uppercase font-jay"
+              >About Me</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-slate-300 hover:text-orange-300 uppercase font-jay"
+              >What i do</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-slate-300 hover:text-orange-300 uppercase font-jay"
+              >Portfolio</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-slate-300 hover:text-orange-300 uppercase font-jay"
+              >Skills</a
+            >
+            <a
+              href="#"
+              class="block px-3 py-2 text-slate-300 hover:text-orange-300 uppercase font-jay"
+              >Blog</a
+            >
+            <a
+              href="#"
+              class="block bg-orange-600 hover:bg-orange-300 rounded-xl px-4 py-2 font-jay font-bold text-slate-200 justify-center items-center"
+              >Contact Aq</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="aboutMe" class="bg-slate-800 scroll-smooth">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div
+          class="order-2 lg:order-2 border-[12px] sm:border-[16px] border-slate-900 rounded-2xl shadow-2xl overflow-hidden">
+          <img
+            src="https://i.pinimg.com/736x/40/62/b0/4062b0b176d72f9c3d3af4713cef563d.jpg"
+            class="w-full h-full object-cover"
+            alt="" />
+        </div>
+
+        <div class="order-1 lg:order-1">
+          <h1 class="font-jay text-5xl font-bold leading-tight text-white">
+            Hello, I'm <span class="text-oren">Jaylaa</span>
+          </h1>
+          <h2 class="font-jay text-3xl font-semibold text-slate-200">
+            Web / Mobile Developer
+          </h2>
+          <p class="mt-5 leading-relaxed text-slate-200 font-jay">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            quasi sint doloremque libero dolore obcaecati. Facere, odio.
+          </p>
+
+          <div class="mt-6 flex flex-wrap items-center gap-4">
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-slate-900 hover:bg-orange-500 text-white px-4 py-3 text-2xl">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-slate-900 hover:bg-orange-500 text-white px-4 py-3 text-2xl">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-slate-900 hover:bg-orange-500 text-white px-4 py-3 text-2xl">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href=""
+              class="inline-flex items-center justify-center rounded-lg bg-slate-900 hover:bg-orange-500 text-white px-4 py-3 text-2xl">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- what i do -->
+    <section id="whatIDo" class="bg-slate-900 scroll-smooth">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-slate-600">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-bold font-jay text-slate-200 underline underline-offset-8 decoration-orange-500 decoration-4 uppercase tracking-widest">
+            What I Do
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-slate-800/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid rounded-full bg-slate-900 text-white place-items-center">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3
+                class="text-slate-100 font-jay font-bold text-lg tracking-wider">
+                Web Design
+              </h3>
+            </div>
+            <p class="text-slate-300 font-jay">
+              I create responsive and visually appealing websites that provide a
+              great user experience.
+            </p>
+          </div>
+          <div class="rounded-xl bg-slate-800/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid rounded-full bg-slate-900 text-white place-items-center">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3
+                class="text-slate-100 font-jay font-bold text-lg tracking-wider">
+                App Design
+              </h3>
+            </div>
+            <p class="text-slate-300 font-jay">
+              I create responsive and visually appealing websites that provide a
+              great user experience.
+            </p>
+          </div>
+          <div class="rounded-xl bg-slate-800/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div
+                class="w-10 h-10 grid rounded-full bg-slate-900 text-white place-items-center font-light">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3
+                class="text-slate-100 font-jay font-bold text-lg tracking-wider">
+                Branding
+              </h3>
+            </div>
+            <p class="text-slate-300 font-jay">
+              I create responsive and visually appealing websites that provide a
+              great user experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+     <section id="portofolio" class="bg-slate-900">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-700">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl sm:text-4xl font-bold font-acme text-white underline decoration-orange-500 decoration-4 underline-offset-8 tracking-[6px] uppercase">
+            Portfolio
+          </h2>
+        </div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <a
+            href="https://i.pinimg.com/736x/94/31/f1/9431f1b0c764fbadfc2dd0e19cc95716.jpg"
+            class="group rounded-xl bg-slate-800/60 p-5 hover:ring-1 hover:ring-orange-500 transition">
+            <img
+              src="asset/Frame 1 (1).png"
+              alt="Preview React website"
+              class="h-44 w-full object-cover rounded mb-4 group-hover:scale-105 transition" />
+            <h3 class="text-2xl text-center text-slate-100 font-ubuntu mb-1">
+              Website with React JS
+            </h3>
+            <p class="text-center text-slate-300">
+              Membuat website menggunakan React JS
+            </p>
+          </a>
+
+          <a
+            href="https://vigowebs.gumroad.com/l/shoppr-flutter"
+            class="group rounded-xl bg-slate-800/60 p-5 hover:ring-1 hover:ring-orange-500 transition">
+            <img
+              src="asset/Frame 3 (1).png"
+              alt="Preview project React"
+              class="h-44 w-full object-cover rounded mb-4 group-hover:scale-105 transition" />
+            <h3 class="text-2xl text-center text-slate-100 font-ubuntu mb-1">
+              Website with React JS
+            </h3>
+            <p class="text-center text-slate-300">
+              Membuat website menggunakan React JS
+            </p>
+          </a>
+
+          <a
+            href="https://vigowebs.gumroad.com/l/meenu"
+            class="group rounded-xl bg-slate-800/60 p-5 hover:ring-1 hover:ring-orange-500 transition">
+            <img
+              src="asset/pengaduan.png"
+              alt="Preview website pengaduan"
+              class="h-44 w-full object-cover rounded mb-4 group-hover:scale-105 transition" />
+            <h3 class="text-2xl text-center text-slate-100 font-ubuntu mb-1">
+              Website with React JS
+            </h3>
+            <p class="text-center text-slate-300">
+              Membuat website menggunakan React JS
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
